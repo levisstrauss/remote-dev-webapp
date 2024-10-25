@@ -1,6 +1,8 @@
 import BookmarkIcon from "./BookmarkIcon";
 
 export default function JobItemContent() {
+
+  return  <EmptyJobContent />
   return (
     <section className="job-details">
       <div>
@@ -92,6 +94,7 @@ export default function JobItemContent() {
   );
 }
 
+// @ts-ignore
 function EmptyJobContent() {
   return (
     <section className="job-details">
