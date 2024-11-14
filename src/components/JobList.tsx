@@ -1,7 +1,12 @@
-export function JobList() {
-  return <ul className="job-list">
+import JobListItem from "./JobListItem.tsx";
 
-  </ul>;
+export function JobList({ jobItems }) {
+  return(
+      <ul className="job-list">
+        {jobItems.map((jobItem) => (
+            <JobListItem jobItem={jobItem} />
+        ))}
+      </ul>
+  )
 }
-
 export default JobList;
